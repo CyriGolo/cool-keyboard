@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    background-color: rgb(54, 54, 54);
+    gap: 50px;
+    cursor: none;
+}
+
+section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 385px;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: rotateX(25deg);
+    filter: drop-shadow(0 4mm 4mm rgba(0, 0, 0, 0.25));
+}
+
+/* INPUT */
+
+input {
+    cursor: none;
+    color: white;
+    padding: 20px 0;
+    width: 1300px;
+    text-align: center;
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* LINES */
+
+.line {
+    position: relative;
+    display: flex;
+    gap: 6px;
+}
+
+.first {
+    z-index: 0;
+}
+.second {
+    top: -15px;
+}
+.third {
+    top: -25px;
+}
+.fourth {
+    top: -35px;
+}
+.fifth {
+    top: -45px;
+}
+
+/* -- KEYS -- */
+
+.white {
+    background-color: white;
+    border: 2px black solid;
+    font-weight: 500;
+}
+
+/* color */
+
+.black {
+    background-color: black;
+    border: 2px white solid;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.key {
+    color: rgb(207, 86, 255);
+    text-align: center;
+    height: 80px;
+    border-radius: 10px;
+    transform:translateY(0);
+    font-size: 28px;
+    filter: drop-shadow(0 6mm 4mm rgb(171, 72, 211));
+}
+
+/* size */
+
+.small {
+    width: 80px;
+}
+
+.semi-small {
+    width: 120px;
+}
+
+.large {
+    width: 166px;
+}
+
+.del {
+    width: 160px;
+}
+
+.shift {
+    width: 182px;
+}
+
+.right-shift {
+    width: 230px;
+}
+
+.spacebar {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    margin-top: 20px;
+    display: block;
+    height: 3px;
+    width: 60px;
+    border-radius: 2px;
+    background-color: rgb(207, 86, 255);
+}
+
+.bot {
+    width: 108px;
+}
